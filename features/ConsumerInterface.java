@@ -33,10 +33,11 @@ public class ConsumerInterface {
 //				}
 //				  };
 //		
-		  ar.forEach(i -> System.out.print(i +" "));
+		 
         Consumer c= i -> System.out.println(i+ " ");
  
 		  ar.forEach(c);
+		  ar.forEach(i -> System.out.print(i +" "));
 	}
 
 }

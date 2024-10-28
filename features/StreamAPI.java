@@ -41,7 +41,8 @@ public class StreamAPI {
 		  // .filter(n->n%2==0)  //predicate method
 		   .sorted()
 		   .map(n ->n*3)
-		   .reduce(0,(c,e)->c+e); //  .forEach(n->System.out.println(n)); //in single line
+		   .reduce(0,(c,e)->c+e); //  .forEach(n->System.out.println(n)); //in single line //dentity: 0 (the starting point for the sum).
+		                                                   //Accumulator: (c, e) -> c+ e (adds each element to the accumulated sum).
 		System.out.println(result);
 				
 		
